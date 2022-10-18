@@ -15,7 +15,7 @@ pipeline {
                 sh "mvn clean package"
              }
         }
-        stage ('QA') { 
+        stage ('Deploy') { 
              steps {
                 echo "QA"
              }
