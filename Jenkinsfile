@@ -8,9 +8,9 @@ agent any
                 sh "git clone https://github.com/Gururaj1119/hello-world-war.git"
             }
         }
-        stage ('Test') { 
+        stage ('Build') { 
              steps {
-                echo "Testing"
+                sh "ls"
              }
         }
         stage ('QA') { 
