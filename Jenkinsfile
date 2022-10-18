@@ -11,13 +11,13 @@ pipeline {
         stage ('Build') { 
              steps {
                 sh "ls"
-                //sh "cd hello-world-war"
-               // sh "mvn clean package"
+                sh "cd hello-world-war"
+                sh "mvn clean package"
              }
         }
         stage ('Deploy') { 
              steps {
-                echo "QA"
+                sh "ls"
              }
         }
  
