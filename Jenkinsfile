@@ -10,7 +10,7 @@ pipeline {
         }
         stage ('Build') { 
              steps {
-                //sh "ls"
+                sh "ls"
                 //sh "cd hello-world-war"
                // sh "mvn clean package"
              }
@@ -20,7 +20,7 @@ pipeline {
                 echo "QA"
              }
         }
-        stage ('Deploy') { 
+        stage ('Dep') { 
              steps {
                 echo "Deploy"
              }
