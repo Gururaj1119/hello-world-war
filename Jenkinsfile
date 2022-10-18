@@ -18,6 +18,7 @@ pipeline {
         stage ('Deploy') { 
              steps {
                 sh "ls"
+                sh "cp -R /home/slave1/workspace/hellopipe/target/hello-world-war-1.0.0.war /opt/tomcat/webapps"
              }
         }
  
